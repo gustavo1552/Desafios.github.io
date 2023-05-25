@@ -1,0 +1,137 @@
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #f3f5f7;
+}
+
+#head {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #ffffff;
+    background-color: #574ae8;
+    background-image: linear-gradient(to right, #574ae8, #3ea1db);
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3vh;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5vh;
+
+}
+
+
+#buscador-container {
+    background: #ffffff33;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+
+}
+
+#lupa-svg {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#buscador {
+    width: 100%;
+    background-color: transparent;
+    border: transparent;
+    color: #ffffff;
+}
+
+#buscador:focus,
+input:focus {
+    outline: none;
+}
+
+#buscador::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.post {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 1cm;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.data {
+    color: #717171;
+}
+
+.icon {
+    fill: #574ae801;
+    stroke: #574ae8;
+    stroke-width: 7;
+    transition: fill 0.3s;
+    cursor: pointer;
+}
+
+.icon.filled,
+.icon:hover {
+    fill: #574ae8;
+}
+
+
+
+.titlePost {
+    margin-top: 2%;
+
+    font-size: 26px;
+}
+
+.textPost {
+    margin-top: 2%;
+    color: #717171;
+
+}
+
+@media screen and (max-width: 900px) {
+
+    #menu,
+    #search,
+    #buscador-container,
+    .post {
+        margin-top: 5vh;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
